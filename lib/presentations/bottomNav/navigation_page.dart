@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sathwaras/controllers/controllers.dart';
@@ -31,26 +33,41 @@ class NavigationPage extends StatelessWidget {
         body: _screens[navigationController.currentIndex.value],
         bottomNavigationBar: Stack(
           children: [
-            BottomNavigationBar(
-              type: BottomNavigationBarType.fixed,
-              items: _icons
-                  .map(
-                    (title, icon) => MapEntry(
-                      title,
-                      BottomNavigationBarItem(
-                        icon: Icon(
-                          icon,
-                          size: 30,
-                          color: ColorPalette.primaryColor,
-                        ),
-                        label: title,
-                      ),
-                    ),
-                  )
-                  .values
-                  .toList(),
-              currentIndex: navigationController.currentIndex.value,
-              onTap: (index) => navigationController.setCurrentIndex(index),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(30),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 60, sigmaY: 60),
+                child: Opacity(
+                  opacity: 1,
+                  child: BottomNavigationBar(
+                    backgroundColor: Colors.white,
+                    showSelectedLabels: true,
+                    showUnselectedLabels: false,
+                    unselectedIconTheme: IconThemeData(
+                        color:
+                            ColorPalette.secondaryFontColor.withOpacity(0.7)),
+                    type: BottomNavigationBarType.fixed,
+                    items: _icons
+                        .map(
+                          (title, icon) => MapEntry(
+                            title,
+                            BottomNavigationBarItem(
+                              icon: Icon(
+                                icon,
+                                size: 30,
+                              ),
+                              label: title,
+                            ),
+                          ),
+                        )
+                        .values
+                        .toList(),
+                    currentIndex: navigationController.currentIndex.value,
+                    onTap: (index) =>
+                        navigationController.setCurrentIndex(index),
+                  ),
+                ),
+              ),
             )
           ],
         ),
