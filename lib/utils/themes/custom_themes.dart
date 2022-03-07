@@ -43,6 +43,11 @@ class CustomTheme {
           fontSize: 12,
           color: ColorPalette.primaryFontColor,
         ),
+        headlineLarge: GoogleFonts.openSans(
+          fontSize: 26,
+          fontWeight: FontWeight.bold,
+          color: ColorPalette.primaryFontColor,
+        ),
       ),
     );
   }

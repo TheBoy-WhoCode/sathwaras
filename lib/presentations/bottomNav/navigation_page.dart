@@ -3,13 +3,14 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sathwaras/controllers/controllers.dart';
+import 'package:sathwaras/presentations/home/home_page.dart';
 import 'package:sathwaras/utils/utils.dart';
 
 class NavigationPage extends StatelessWidget {
   NavigationPage({Key? key}) : super(key: key);
 
   final List<Widget> _screens = [
-    const Scaffold(),
+    const HomePage(),
     const Scaffold(),
     const Scaffold(),
     const Scaffold(),
