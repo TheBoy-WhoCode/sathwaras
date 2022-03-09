@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class ColorPalette {
+  // Color(0xFFedf3f9)
   // Colors
-  static const Color primaryColor = Color(0xFF7579E7);
+  static const Color primaryColor = Colors.white;
   static const Color scaffoldColor = Color(0xFF7579E7);
   static const Color backgroundColor = Color(0xFFedf3f9);
+
   static const Color primaryFontColor = Colors.white;
   static const Color secondaryFontColor = Color(0xFF47546e);
 
@@ -37,5 +39,4 @@ class ColorPalette {
 
   static const MaterialColor primarySwatch =
       MaterialColor(0xFF7579E7, purpleShade);
-  
 }

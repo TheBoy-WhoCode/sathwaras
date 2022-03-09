@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sathwaras/controllers/controllers.dart';
-import 'package:sathwaras/presentations/home/home_page.dart';
+import 'package:sathwaras/presentations/presentations.dart';
 import 'package:sathwaras/utils/utils.dart';
 
 class NavigationPage extends StatelessWidget {

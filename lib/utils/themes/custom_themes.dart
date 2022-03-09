@@ -8,8 +8,21 @@ class CustomTheme {
       primarySwatch: ColorPalette.primarySwatch,
       visualDensity: VisualDensity.adaptivePlatformDensity,
       useMaterial3: true,
-      primaryColor: ColorPalette.scaffoldColor,
       scaffoldBackgroundColor: ColorPalette.backgroundColor,
+      appBarTheme: AppBarTheme(
+        backgroundColor: ColorPalette.scaffoldColor,
+        centerTitle: true,
+        titleTextStyle: GoogleFonts.openSans(
+          fontSize: 26,
+          fontWeight: FontWeight.bold,
+          color: ColorPalette.primaryFontColor,
+        ),
+      ),
+      tabBarTheme: TabBarTheme(
+        indicatorSize: TabBarIndicatorSize.label,
+        labelStyle:
+            GoogleFonts.openSans(fontSize: 18, fontWeight: FontWeight.bold),
+      ),
       textTheme: TextTheme(
         headline1: GoogleFonts.openSans(
           fontSize: 26,
