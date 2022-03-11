@@ -11,7 +11,7 @@ class NavigationPage extends StatelessWidget {
 
   final List<Widget> _screens = [
     const HomePage(),
-    const SearchPage(),
+     SearchPage(),
     const Scaffold(),
     const Scaffold(),
     const Scaffold(),
