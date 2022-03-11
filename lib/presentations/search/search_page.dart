@@ -26,6 +26,7 @@ class SearchPage extends StatelessWidget {
       controller: _scrollController,
       slivers: [
         SliverAppBar(
+          expandedHeight: 60,
           floating: true,
           title: Container(
             width: double.infinity,
