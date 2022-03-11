@@ -35,7 +35,7 @@ class NavigationPage extends StatelessWidget {
         bottomNavigationBar: Stack(
           children: [
             ClipRRect(
-              borderRadius: BorderRadius.circular(30),
+              // borderRadius: BorderRadius.circular(30),
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 60, sigmaY: 60),
                 child: Opacity(
@@ -44,9 +44,9 @@ class NavigationPage extends StatelessWidget {
                     backgroundColor: Colors.white,
                     showSelectedLabels: true,
                     showUnselectedLabels: false,
-                    unselectedIconTheme: IconThemeData(
-                        color:
-                            ColorPalette.secondaryFontColor.withOpacity(0.7)),
+                    unselectedIconTheme: const IconThemeData(
+                      color: ColorPalette.primaryFontColor,
+                    ),
                     type: BottomNavigationBarType.fixed,
                     items: _icons
                         .map(

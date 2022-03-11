@@ -13,9 +13,7 @@ class PostCaption extends StatelessWidget {
     return ReadMoreText(
       AppConstants.loremIpsum,
       trimLines: 1,
-      style: _themeData.textTheme.headline6?.copyWith(
-        color: ColorPalette.secondaryFontColor,
-      ),
+      style: _themeData.textTheme.headline6,
       moreStyle: _themeData.textTheme.headline6?.copyWith(
         color: ColorPalette.scaffoldColor,
       ),

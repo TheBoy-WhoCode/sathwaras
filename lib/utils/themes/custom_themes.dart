@@ -15,7 +15,7 @@ class CustomTheme {
         titleTextStyle: GoogleFonts.openSans(
           fontSize: 26,
           fontWeight: FontWeight.bold,
-          color: ColorPalette.primaryFontColor,
+          color: ColorPalette.secondaryFontColor,
         ),
       ),
       tabBarTheme: TabBarTheme(

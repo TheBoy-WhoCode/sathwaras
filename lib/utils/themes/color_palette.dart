@@ -7,8 +7,8 @@ class ColorPalette {
   static const Color scaffoldColor = Color(0xFF7579E7);
   static const Color backgroundColor = Color(0xFFedf3f9);
 
-  static const Color primaryFontColor = Colors.white;
-  static const Color secondaryFontColor = Color(0xFF47546e);
+  static const Color secondaryFontColor = Colors.white;
+  static const Color primaryFontColor = Color(0xFF47546e);
 
   // Material Colors
   static const Map<int, Color> purpleShade = {

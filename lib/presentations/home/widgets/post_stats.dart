@@ -16,7 +16,6 @@ class PostStats extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(4),
               decoration: const BoxDecoration(
-                color: ColorPalette.secondaryFontColor,
                 shape: BoxShape.circle,
               ),
               child: const Icon(
@@ -31,14 +30,12 @@ class PostStats extends StatelessWidget {
             Expanded(
               child: Text(
                 "10k Likes",
-                style: _themeData.textTheme.subtitle1
-                    ?.copyWith(color: ColorPalette.secondaryFontColor),
+                style: _themeData.textTheme.subtitle1,
               ),
             ),
             Text(
               "5k Shares",
-              style: _themeData.textTheme.subtitle1
-                  ?.copyWith(color: ColorPalette.secondaryFontColor),
+              style: _themeData.textTheme.subtitle1,
             )
           ],
         ),

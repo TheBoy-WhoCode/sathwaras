@@ -21,7 +21,6 @@ class PostHeader extends StatelessWidget {
               Text(
                 "Jiten Patel",
                 style: _themeData.textTheme.headline5?.copyWith(
-                  color: ColorPalette.secondaryFontColor,
                   fontWeight: FontWeight.w600,
                 ),
               ),
@@ -29,8 +28,7 @@ class PostHeader extends StatelessWidget {
                 children: [
                   Text(
                     "10 min ago • ",
-                    style: _themeData.textTheme.subtitle1
-                        ?.copyWith(color: ColorPalette.secondaryFontColor),
+                    style: _themeData.textTheme.subtitle1,
                   ),
                   Icon(
                     Icons.public,
