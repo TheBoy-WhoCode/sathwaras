@@ -44,6 +44,6 @@ class ColorPalette {
   static const LinearGradient overlayGradient = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
-    colors: [Colors.black54, Colors.transparent],
+    colors: [Colors.black54, Colors.black54, Colors.transparent],
   );
 }
