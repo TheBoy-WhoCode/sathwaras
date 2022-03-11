@@ -39,4 +39,11 @@ class ColorPalette {
 
   static const MaterialColor primarySwatch =
       MaterialColor(0xFF7579E7, purpleShade);
+
+  // Gradients
+  static const LinearGradient overlayGradient = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [Colors.black54, Colors.transparent],
+  );
 }
